@@ -1,0 +1,46 @@
+name: Deploy to VPS via SSH
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 22
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run linters
+        run: npm run lint
+
+  deploy:
+    name: Deploy
+    needs: [run-linters]
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/bagoolCN
+            git checkout main
+            git restore .
+            git pull
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            nvm use 22
+            npm ci
+            npm run build

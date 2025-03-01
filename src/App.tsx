@@ -1,5 +1,6 @@
 import Card from "./card";
 import PrimaryButton from "./primary-button";
+import Title from "./title";
 
 export default function App() {
   return (
@@ -8,7 +9,7 @@ export default function App() {
       <h2 className="text-2xl m-3">Check out our components</h2>
       <div className="grid grid-cols-3 gap-4">
         <Card>
-          PrimaryButton
+          <Title> PrimaryButton </Title>
           <PrimaryButton> Press me </PrimaryButton>
         </Card>
         <Card> SecondaryButton </Card>

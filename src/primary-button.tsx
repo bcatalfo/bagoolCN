@@ -6,8 +6,10 @@ export default function PrimaryButton({
   children: React.ReactNode;
 }) {
   return (
-    <a className="w-full rounded-full bg-green-300">
-      <div className="bg-green-300">{children}</div>
+    <a className="w-full rounded-full bg-green-300 hover:bg-transparent">
+      <div className="bg-green-300 flex items-center text-balance py-4 px-4 text-black gap-4">
+        {children}
+      </div>
     </a>
   );
 }

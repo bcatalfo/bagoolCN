@@ -1,0 +1,41 @@
+a {
+  color: red;
+}
+
+a:hover {
+  --outer-radius: 9999px;
+  --border-size: 2px;
+  --inner-radius: calc(var(--outer-radius) - var(--border-size));
+  animation: halfBorderSpin 0.3s cubic-bezier(0, 0.28, 0.28, 1.01) forwards;
+  background-image: conic-gradient(
+    from var(--angle) at 0.5rem 150%,
+    transparent,
+    transparent 25%,
+    black 25%,
+    black 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: var(--outer-radius);
+  padding: var(--border-size);
+}
+
+a > div {
+  border-radius: var(--inner-radius);
+}
+
+@keyframes halfBorderSpin {
+  from {
+    --angle: 0turn;
+  }
+
+  to {
+    --angle: 0.5turn;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}

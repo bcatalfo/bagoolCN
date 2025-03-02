@@ -10,7 +10,7 @@ export default function App() {
       <div className="grid gird-cols-1 lg:grid-cols-3 gap-4">
         <Card>
           <Title> PrimaryButton </Title>
-          <PrimaryButton> Press me </PrimaryButton>
+          <PrimaryButton> I'm a button click on me! </PrimaryButton>
         </Card>
         <Card> SecondaryButton </Card>
         <Card> LogoButton </Card>

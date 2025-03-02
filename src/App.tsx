@@ -10,9 +10,26 @@ export default function App() {
       <div className="grid gird-cols-1 lg:grid-cols-3 gap-4">
         <Card>
           <Title> Button </Title>
-          <Button color="green"> I'm a button click on me! </Button>
-          <Button color="black"> I'm a button click on me! </Button>
-          <Button color="yellow"> I'm a button click on me! </Button>
+          <Button backgroundColor="green" borderColor="black">
+            I'm a button click on me!
+          </Button>
+          <Button
+            backgroundColor="black"
+            borderColor="orange"
+            textColor="white"
+          >
+            I'm a button click on me!
+          </Button>
+          <Button backgroundColor="yellow" borderColor="black">
+            I'm a button click on me!
+          </Button>
+          <Button
+            backgroundColor="black"
+            borderColor="purple"
+            textColor="white"
+          >
+            I'm a button click on me!
+          </Button>
         </Card>
         <Card>
           <Title> ActionButton </Title>

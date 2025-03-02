@@ -1,5 +1,5 @@
 import Card from "./card";
-import PrimaryButton from "./primary-button";
+import Button from "./button";
 import Title from "./title";
 
 export default function App() {
@@ -9,8 +9,8 @@ export default function App() {
       <h2 className="text-2xl m-3">Check out our components</h2>
       <div className="grid gird-cols-1 lg:grid-cols-3 gap-4">
         <Card>
-          <Title> PrimaryButton </Title>
-          <PrimaryButton> I'm a button click on me! </PrimaryButton>
+          <Title> Button </Title>
+          <Button> I'm a button click on me! </Button>
         </Card>
         <Card> SecondaryButton </Card>
         <Card> LogoButton </Card>

@@ -12,7 +12,9 @@ export default function App() {
           <Title> Button </Title>
           <Button> I'm a button click on me! </Button>
         </Card>
-        <Card> SecondaryButton </Card>
+        <Card>
+          <Title> ActionButton </Title>
+        </Card>
         <Card> LogoButton </Card>
         <Card> Header </Card>
         <Card> Hero </Card>

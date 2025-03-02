@@ -1,9 +1,37 @@
 import "./button.css";
+import cn from "classnames";
 
-export default function Button({ children }: { children: React.ReactNode }) {
+export default function Button({
+  color,
+  children,
+}: {
+  color: string;
+  children: React.ReactNode;
+}) {
   return (
-    <a className="w-full rounded-full bg-green-300 hover:bg-transparent">
-      <div className="bg-green-300 flex items-center text-balance py-4 px-4 text-black gap-4">
+    <a
+      className={cn(
+        "w-full rounded-full hover:bg-transparent",
+        {
+          "bg-green-300": color == "green",
+        },
+        { "bg-yellow-300": color == "yellow" },
+        { "bg-gray-700": color == "black" },
+        { black: color == "black" }
+      )}
+    >
+      <div
+        className={cn(
+          { "bg-green-300": color == "green" },
+          { "bg-yellow-300": color == "yellow" },
+          { "bg-gray-700": color == "black" },
+          "flex items-center gap-4",
+          "text-balance",
+          "py-4 px-4",
+          { "text-black": color != "black" },
+          { "text-white": color == "black" }
+        )}
+      >
         {children}
         <svg
           className="flex-none"

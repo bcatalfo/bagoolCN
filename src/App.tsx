@@ -10,7 +10,7 @@ export default function App() {
       <div className="grid gird-cols-1 lg:grid-cols-3 gap-4">
         <Card>
           <Title> Button </Title>
-          <Button backgroundColor="green" borderColor="black">
+          <Button backgroundColor="lawngreen" borderColor="black">
             I'm a button click on me!
           </Button>
           <Button
@@ -25,7 +25,7 @@ export default function App() {
           </Button>
           <Button
             backgroundColor="black"
-            borderColor="purple"
+            borderColor="magenta"
             textColor="white"
           >
             I'm a button click on me!

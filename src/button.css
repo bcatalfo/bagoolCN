@@ -2,41 +2,18 @@ a {
   --outer-radius: 9999px;
   --border-size: 2px;
   --inner-radius: calc(var(--outer-radius) - var(--border-size));
+  background-color: var(--background-color);
   background-image: conic-gradient(
     from var(--angle) at 0.5rem 150%,
     transparent,
     transparent 25%,
-    black 25%,
-    black 75%,
+    var(--border-color) 25%,
+    var(--border-color) 75%,
     transparent 75%,
     transparent
   );
   border-radius: var(--outer-radius);
   padding: var(--border-size);
-}
-
-a.border-orange {
-  background-image: conic-gradient(
-    from var(--angle) at 0.5rem 150%,
-    transparent,
-    transparent 25%,
-    oklch(0.769 0.188 70.08) 25%,
-    oklch(0.769 0.188 70.08) 75%,
-    transparent 75%,
-    transparent
-  );
-}
-
-a.border-purple {
-  background-image: conic-gradient(
-    from var(--angle) at 0.5rem 150%,
-    transparent,
-    transparent 25%,
-    oklch(0.627 0.265 303.9) 25%,
-    oklch(0.627 0.265 303.9) 75%,
-    transparent 75%,
-    transparent
-  );
 }
 
 a:hover {
@@ -45,6 +22,7 @@ a:hover {
 
 a > div {
   border-radius: var(--inner-radius);
+  background-color: var(--background-color);
 }
 
 @keyframes halfBorderSpin {

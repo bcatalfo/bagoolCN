@@ -14,22 +14,16 @@ export default function Button({
 }) {
   return (
     <a
-      className={cn(
-        "w-full rounded-full hover:bg-transparent",
+      className={cn("w-full rounded-full hover:bg-transparent")}
+      style={
         {
-          "bg-green-300": backgroundColor == "green",
-        },
-        { "bg-yellow-300": backgroundColor == "yellow" },
-        { "bg-gray-700": backgroundColor == "black" },
-        { "border-orange": borderColor == "orange" },
-        { "border-purple": borderColor == "purple" }
-      )}
+          "--border-color": borderColor,
+          "--background-color": backgroundColor,
+        } as React.CSSProperties
+      }
     >
       <div
         className={cn(
-          { "bg-green-300": backgroundColor == "green" },
-          { "bg-yellow-300": backgroundColor == "yellow" },
-          { "bg-gray-700": backgroundColor == "black" },
           "flex items-center gap-4",
           "text-balance",
           "py-4 px-4",

@@ -30,6 +30,13 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <Button
+            backgroundColor="blue"
+            borderColor="oklch(0.712 0.194 13.428)"
+            textColor="white"
+          >
+            I'm a button click on me!
+          </Button>
         </Card>
         <Card>
           <Title> ActionButton </Title>

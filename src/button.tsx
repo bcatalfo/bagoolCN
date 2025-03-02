@@ -28,7 +28,9 @@ export default function Button({
           "text-balance",
           "py-4 px-4",
           { "text-black": textColor == "black" },
-          { "text-white": textColor == "white" }
+          { "text-white": textColor == "white" },
+          "rounded-(--inner-radius)",
+          "bg-(--background-color)"
         )}
       >
         {children}

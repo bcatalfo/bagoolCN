@@ -20,11 +20,6 @@ a:hover {
   animation: halfBorderSpin 0.3s cubic-bezier(0, 0.28, 0.28, 1.01) forwards;
 }
 
-a > div {
-  border-radius: var(--inner-radius);
-  background-color: var(--background-color);
-}
-
 @keyframes halfBorderSpin {
   from {
     --angle: 0turn;

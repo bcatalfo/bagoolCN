@@ -9,4 +9,7 @@ Component library built with React and TailwindCSS.
 - - Add NextJS
 - - Change how the deployment works
 - - Replace the a tag in Button with a NextJS Link component
+- Button
+- - Add different styles
+- - Allow adding icons
 - Mobile

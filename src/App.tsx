@@ -38,11 +38,7 @@ export default function App() {
             I'm a button click on me!
           </Button>
         </Card>
-        <Card>
-          <Title> ActionButton </Title>
-        </Card>
-        <Card> LogoButton </Card>
-        <Card> Header </Card>
+        <Card> Tabs </Card>
         <Card> Hero </Card>
         <Card> Search </Card>
         <Card> Slider </Card>
@@ -54,6 +50,23 @@ export default function App() {
         <Card> Link </Card>
         <Card> Title </Card>
         <Card> Subtitle </Card>
+        <Card> Table </Card>
+        <Card> Accordion </Card>
+        <Card> Alert </Card>
+        <Card> Dialog </Card>
+        <Card> Calendar </Card>
+        <Card> Chart </Card>
+        <Card> Checkbox </Card>
+        <Card> Input </Card>
+        <Card> Pagionation </Card>
+        <Card> Progress </Card>
+        <Card> Radio Group </Card>
+        <Card> Select </Card>
+        <Card> Separator </Card>
+        <Card> Sidebar </Card>
+        <Card> Switch </Card>
+        <Card> Toast </Card>
+        <Card> Notification </Card>
       </div>
     </div>
   );

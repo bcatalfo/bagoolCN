@@ -26,7 +26,7 @@ export default function App() {
           <Button
             backgroundColor="black"
             borderColor="magenta"
-            textColor="white"
+            textColor="chartreuse"
           >
             I'm a button click on me!
           </Button>

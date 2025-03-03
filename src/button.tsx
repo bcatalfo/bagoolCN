@@ -19,6 +19,7 @@ export default function Button({
         {
           "--border-color": borderColor,
           "--background-color": backgroundColor,
+          "--text-color": textColor,
         } as React.CSSProperties
       }
     >
@@ -27,8 +28,7 @@ export default function Button({
           "flex items-center gap-4",
           "text-balance",
           "py-4 px-4",
-          { "text-black": textColor == "black" },
-          { "text-white": textColor == "white" },
+          "text-(--text-color)",
           "rounded-(--inner-radius)",
           "bg-(--background-color)"
         )}

@@ -25,15 +25,17 @@ export default function App() {
           </Button>
           <Button
             backgroundColor="black"
-            borderColor="magenta"
+            borderColor="bisque"
             textColor="chartreuse"
+            variant="goober"
           >
             I'm a button click on me!
           </Button>
           <Button
             backgroundColor="blue"
-            borderColor="oklch(0.712 0.194 13.428)"
+            borderColor="oklch(0.637 0.237 25.331)"
             textColor="white"
+            variant="goober"
           >
             I'm a button click on me!
           </Button>

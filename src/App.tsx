@@ -37,6 +37,13 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <Button
+            backgroundColor="orange"
+            borderColor="black"
+            textColor="black"
+          >
+            I'm a button click on me!
+          </Button>
         </Card>
         <Card> Tabs </Card>
         <Card> Hero </Card>

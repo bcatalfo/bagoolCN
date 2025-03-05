@@ -5,16 +5,20 @@ export default function Button({
   backgroundColor,
   borderColor,
   textColor = "black",
+  variant = "default",
   children,
 }: {
   backgroundColor: string;
   borderColor: string;
   textColor?: string;
+  variant?: string;
   children: React.ReactNode;
 }) {
   return (
     <a
-      className={cn("w-full rounded-full hover:bg-transparent")}
+      className={cn("w-full rounded-full hover:bg-transparent", {
+        default: variant == "default",
+      })}
       style={
         {
           "--border-color": borderColor,
@@ -25,6 +29,10 @@ export default function Button({
     >
       <div
         className={cn(
+          {
+            "rounded-[8px] text-[15px] font-bold border-[1.5px] px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
+              variant == "goober",
+          },
           "flex items-center gap-4",
           "text-balance",
           "py-4 px-4",

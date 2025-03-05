@@ -1,4 +1,4 @@
-a {
+a.default {
   --outer-radius: 9999px;
   --border-size: 2px;
   --inner-radius: calc(var(--outer-radius) - var(--border-size));

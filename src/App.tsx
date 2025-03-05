@@ -41,6 +41,7 @@ export default function App() {
             backgroundColor="orange"
             borderColor="black"
             textColor="black"
+            variant="goober"
           >
             I'm a button click on me!
           </Button>

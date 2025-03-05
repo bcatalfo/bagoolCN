@@ -15,6 +15,10 @@ a.default {
   border-radius: var(--outer-radius);
   padding: var(--border-size);
 }
+a,
+div {
+  border-color: var(--border-color);
+}
 
 a:hover {
   animation: halfBorderSpin 0.3s cubic-bezier(0, 0.28, 0.28, 1.01) forwards;

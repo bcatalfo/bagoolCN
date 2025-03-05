@@ -16,7 +16,7 @@ export default function Button({
 }) {
   return (
     <a
-      className={cn("w-full rounded-full hover:bg-transparent", {
+      className={cn("w-full rounded-[16px] bg-(--border-color)", {
         default: variant == "default",
       })}
       style={

@@ -25,6 +25,22 @@ export default function App() {
           </Button>
           <Button
             backgroundColor="black"
+            borderColor="black"
+            textColor="white"
+            variant="square"
+          >
+            I'm a button click on me!
+          </Button>
+          <Button
+            backgroundColor="white"
+            borderColor="black"
+            textColor="black"
+            variant="square"
+          >
+            I'm a button click on me!
+          </Button>
+          <Button
+            backgroundColor="black"
             borderColor="bisque"
             textColor="chartreuse"
             variant="goober"

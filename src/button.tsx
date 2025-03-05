@@ -33,6 +33,7 @@ export default function Button({
             "rounded-[8px] text-[15px] font-bold border-2 px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
+          { "border-2 border-solid rounded-md": variant == "square" },
           "flex items-center gap-4",
           "text-balance",
           "py-4 px-4",

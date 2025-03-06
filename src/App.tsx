@@ -39,7 +39,13 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
-          <Button backgroundColor="yellow" borderColor="black" variant="action">
+          <Button
+            backgroundColor="yellow"
+            backgroundColorOnHover="lightyellow"
+            borderColor="black"
+            borderColorOnHover="steelblue"
+            variant="action"
+          >
             I'm a button click on me!
           </Button>
           <Button

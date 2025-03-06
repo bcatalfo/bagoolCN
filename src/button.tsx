@@ -3,13 +3,17 @@ import cn from "classnames";
 
 export default function Button({
   backgroundColor,
+  backgroundColorOnHover,
   borderColor,
+  borderColorOnHover,
   textColor = "black",
   variant = "default",
   children,
 }: {
   backgroundColor: string;
+  backgroundColorOnHover?: string;
   borderColor: string;
+  borderColorOnHover?: string;
   textColor?: string;
   variant?: string;
   children: React.ReactNode;
@@ -25,6 +29,7 @@ export default function Button({
             variant == "action",
         },
         { "bg-(--border-color)": variant == "goober" },
+        "border(--border-color) hover:border-(--border-color-on-hover)",
         {
           default: variant == "default",
         }
@@ -32,7 +37,13 @@ export default function Button({
       style={
         {
           "--border-color": borderColor,
+          "--border-color-on-hover": borderColorOnHover
+            ? borderColorOnHover
+            : borderColor,
           "--background-color": backgroundColor,
+          "--background-color-on-hover": backgroundColorOnHover
+            ? backgroundColorOnHover
+            : backgroundColor,
           "--text-color": textColor,
         } as React.CSSProperties
       }
@@ -40,7 +51,7 @@ export default function Button({
       <div
         className={cn(
           {
-            "rounded-[8px] text-[15px] font-bold border-2 px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
+            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
           { "rounded-lg": variant == "action" },
@@ -50,7 +61,7 @@ export default function Button({
           "py-4 px-4",
           "text-(--text-color)",
           "rounded-(--inner-radius)",
-          "bg-(--background-color)"
+          "bg-(--background-color) hover:bg-(--background-color-on-hover)"
         )}
       >
         {children}

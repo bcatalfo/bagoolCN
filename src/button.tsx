@@ -18,9 +18,13 @@ export default function Button({
     <a
       className={cn(
         "w-full",
-        { "rounded-[16px]": variant != "goober" },
-        { "rounded-[8px]": variant == "goober" },
-        "bg-(--border-color)",
+        { "rounded-[16px]": variant == "default" },
+        { "rounded-[8px]": variant == "goober" || "action" },
+        {
+          "shadow-[5px_6px_0_0_#64748b55] border-2 border-solid rounded-lg":
+            variant == "action",
+        },
+        { "bg-(--border-color)": variant == "goober" },
         {
           default: variant == "default",
         }
@@ -39,6 +43,7 @@ export default function Button({
             "rounded-[8px] text-[15px] font-bold border-2 px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
+          { "rounded-lg": variant == "action" },
           { "border-2 border-solid rounded-md": variant == "square" },
           "flex items-center gap-4",
           "text-balance",

@@ -16,9 +16,15 @@ export default function Button({
 }) {
   return (
     <a
-      className={cn("w-full rounded-[16px] bg-(--border-color)", {
-        default: variant == "default",
-      })}
+      className={cn(
+        "w-full",
+        { "rounded-[16px]": variant != "goober" },
+        { "rounded-[8px]": variant == "goober" },
+        "bg-(--border-color)",
+        {
+          default: variant == "default",
+        }
+      )}
       style={
         {
           "--border-color": borderColor,

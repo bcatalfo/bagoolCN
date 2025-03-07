@@ -58,7 +58,7 @@ export default function Button({
               variant == "action",
           },
           { "border-2 border-solid rounded-md": variant == "square" },
-          "flex items-center gap-4",
+          "flex items-center justify-between gap-4",
           "text-balance",
           "py-4 px-4",
           "text-(--text-color)",

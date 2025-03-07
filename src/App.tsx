@@ -13,6 +13,11 @@ export default function App() {
           <Button backgroundColor="lawngreen" borderColor="black">
             I'm a button click on me!
           </Button>
+          <code>
+            {`<Button backgroundColor="lawngreen" borderColor="black">
+              I'm a button click on me!
+            </Button>`}
+          </code>
           <Button
             backgroundColor="black"
             borderColor="orange"

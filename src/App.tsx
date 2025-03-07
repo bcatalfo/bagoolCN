@@ -59,6 +59,16 @@ export default function App() {
           </Button>
           <Button
             backgroundColor="black"
+            backgroundColorOnHover="darkslategrey"
+            borderColor="black"
+            borderColorOnHover="dodgerblue"
+            textColor="white"
+            variant="action"
+          >
+            I'm a button click on me!
+          </Button>
+          <Button
+            backgroundColor="black"
             borderColor="bisque"
             textColor="chartreuse"
             variant="goober"

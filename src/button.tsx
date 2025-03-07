@@ -25,8 +25,7 @@ export default function Button({
         { "rounded-[16px]": variant == "default" },
         { "rounded-[8px]": variant == "goober" || "action" },
         {
-          "shadow-[5px_6px_0_0_#64748b55] border-2 border-solid rounded-lg":
-            variant == "action",
+          "shadow-[5px_6px_0_0_#64748b55] rounded-lg": variant == "action",
         },
         { "bg-(--border-color)": variant == "goober" },
         "border(--border-color) hover:border-(--border-color-on-hover)",
@@ -54,7 +53,10 @@ export default function Button({
             "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
-          { "rounded-lg": variant == "action" },
+          {
+            "rounded-lg active:translate-y-[4px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
+              variant == "action",
+          },
           { "border-2 border-solid rounded-md": variant == "square" },
           "flex items-center gap-4",
           "text-balance",

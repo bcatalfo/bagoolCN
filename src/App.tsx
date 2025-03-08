@@ -10,10 +10,12 @@ export default function App() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 w-3/4">
         <Card>
           <Title> Button </Title>
-          <div className="grid grid-cols-2 gap-2">
-            <Button backgroundColor="lawngreen" borderColor="black">
-              I'm a button click on me!
-            </Button>
+          <div className="grid grid-cols-2 gap-2 items-center">
+            <div className="flex h-1/2">
+              <Button backgroundColor="lawngreen" borderColor="black">
+                I'm a button click on me!
+              </Button>
+            </div>
             <code>
               {`<Button backgroundColor="lawngreen" borderColor="black">
               I'm a button click on me!

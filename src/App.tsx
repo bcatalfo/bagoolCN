@@ -7,7 +7,7 @@ export default function App() {
     <div className="flex flex-col items-center h-screen">
       <h1 className="text-3xl m-4">Welcome to bagoolCN!</h1>
       <h2 className="text-2xl m-3">Check out our components</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 w-3/4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 lg:w-3/4">
         <Card>
           <Title> Button </Title>
           <div className="flex flex-col lg:flex-row gap-2 items-center">

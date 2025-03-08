@@ -18,10 +18,24 @@ export default function App() {
             </div>
             <pre className="flex grow-2">
               <code>
-                {`<Button backgroundColor="lawngreen" 
-  borderColor="black">
-    I'm a button click on me!
-</Button>`}
+                <div className="flex">
+                  <span className="text-blue-500">{`<Button `}</span>
+                  <span className="text-orange-500">{`backgroundColor`}</span>
+                  <span className="text-red-500">{`=`}</span>
+                  <span className="text-green-500">{`"lawngreen"`}</span>
+                </div>
+                <div className="flex ml-19">
+                  <span className="text-orange-500">{`borderColor`}</span>
+                  <span className="text-red-500">{`=`}</span>
+                  <span className="text-green-500">{`"black"`}</span>
+                  <span className="text-blue-500">{`>`}</span>
+                </div>
+                <div className="flex ml-10">
+                  <span className="text-slate-800">{`I'm a button click on me!`}</span>
+                </div>
+                <div className="flex">
+                  <span className="text-blue-500">{`</Button>`}</span>
+                </div>
               </code>
             </pre>
           </div>

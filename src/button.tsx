@@ -21,7 +21,7 @@ export default function Button({
   return (
     <a
       className={cn(
-        "w-full",
+        "w-full h-full",
         { "rounded-[16px]": variant == "default" },
         { "rounded-[8px]": variant == "goober" || "action" },
         {
@@ -63,7 +63,8 @@ export default function Button({
           "py-4 px-4",
           "text-(--text-color)",
           "rounded-(--inner-radius)",
-          "bg-(--background-color) hover:bg-(--background-color-on-hover)"
+          "bg-(--background-color) hover:bg-(--background-color-on-hover)",
+          "w-full h-full"
         )}
       >
         {children}

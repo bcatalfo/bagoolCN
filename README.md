@@ -15,7 +15,9 @@ Component library built with React and TailwindCSS.
 - - - add more code snippets
 - - do an expandable to show more buttons by default only show a few
 - - button to learn more about the buttons making it take up the whole page
-- - Add different styles
-- - - phantom style
+- - Add different variants
+- - - phantom
+- - - vegas
+- - - nintendo
 - - Allow adding icons
 - Mobile

@@ -3,6 +3,7 @@ import Title from "./title";
 import { buttonList } from "./data";
 import Button from "./button";
 import { useState } from "react";
+import classNames from "classnames";
 
 export default function App() {
   const [numButtons, setNumButtons] = useState(3);
@@ -21,17 +22,28 @@ export default function App() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 lg:w-3/4">
         <Card>
           <Title> Button </Title>
-          {buttonList.slice(0, numButtons).map(([button, buttonCode]) => (
-            <>
-              <div className="flex flex-col lg:flex-row gap-2 items-center">
-                <div className="flex grow-1 h-30 lg:h-25 m-2">{button}</div>
-                <pre className="flex grow-2 m-2">
-                  <code>{buttonCode}</code>
-                </pre>
-              </div>
-              <hr className="border-slate-700" />
-            </>
-          ))}
+          {buttonList
+            .slice(0, numButtons)
+            .map(([button, buttonCode], index) => (
+              <>
+                <div className="flex flex-col lg:flex-row gap-2 items-center">
+                  <div
+                    className={classNames(
+                      "flex grow-1",
+                      { "h-30 lg:h-25": index == 9 },
+                      { "h-20 lg:h-15": index != 9 },
+                      "m-2"
+                    )}
+                  >
+                    {button}
+                  </div>
+                  <pre className="flex grow-2 m-2">
+                    <code>{buttonCode}</code>
+                  </pre>
+                </div>
+                <hr className="border-slate-700" />
+              </>
+            ))}
           <div className="flex justify-center">
             <div className="h-18 lg:h-15 ">
               <Button

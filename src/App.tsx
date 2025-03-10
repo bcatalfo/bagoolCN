@@ -6,6 +6,14 @@ import { useState } from "react";
 
 export default function App() {
   const [numButtons, setNumButtons] = useState(3);
+  const toggleButtonListSize = () => {
+    if (numButtons == 3) {
+      setNumButtons(buttonList.length);
+    }
+    if (numButtons == buttonList.length) {
+      setNumButtons(3);
+    }
+  };
   return (
     <div className="flex flex-col items-center h-screen">
       <h1 className="text-3xl m-4">Welcome to bagoolCN!</h1>
@@ -29,7 +37,7 @@ export default function App() {
               <Button
                 backgroundColor="orange"
                 borderColor="black"
-                onClick={() => setNumButtons(5)}
+                onClick={() => toggleButtonListSize()}
               >
                 Show more
               </Button>

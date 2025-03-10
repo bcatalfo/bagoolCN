@@ -58,7 +58,7 @@ export default function Button({
               variant == "goober",
           },
           {
-            "rounded-lg focus:translate-y-[4px] active:translate-y-[4px] focus:translate-x-[3px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) focus:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
+            "rounded-lg z-1 focus:translate-y-[4px] active:translate-y-[4px] focus:translate-x-[3px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) focus:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
               variant == "action",
           },
           { "border-2 border-solid rounded-md": variant == "square" },

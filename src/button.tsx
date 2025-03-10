@@ -54,7 +54,7 @@ export default function Button({
       <div
         className={cn(
           {
-            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
+            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
           {

@@ -38,29 +38,15 @@ export default function App() {
                 </div>
               </>,
             ],
-          ].map(([button, buttonCode]) => (
-            <>
-              <div className="flex flex-col lg:flex-row gap-2 items-center">
-                <div className="flex grow-1 h-18 lg:h-15 m-2">{button}</div>
-                <pre className="flex grow-2 m-2">
-                  <code>{buttonCode}</code>
-                </pre>
-              </div>
-              <hr className="border-slate-700" />
-            </>
-          ))}
-          <div className="flex flex-col lg:flex-row gap-2 items-center">
-            <div className="flex grow-1 h-18 lg:h-15 m-2">
+            [
               <Button
                 backgroundColor="black"
                 borderColor="orange"
                 textColor="white"
               >
                 I'm a button click on me!
-              </Button>
-            </div>
-            <pre className="flex grow-2 m-2">
-              <code>
+              </Button>,
+              <>
                 <div className="flex">
                   <span className="text-blue-500">{`<Button `}</span>
                   <span className="text-orange-500">{`backgroundColor`}</span>
@@ -86,10 +72,19 @@ export default function App() {
                 <div className="flex">
                   <span className="text-blue-500">{`</Button>`}</span>
                 </div>
-              </code>
-            </pre>
-          </div>
-          <hr className="border-slate-700" />
+              </>,
+            ],
+          ].map(([button, buttonCode]) => (
+            <>
+              <div className="flex flex-col lg:flex-row gap-2 items-center">
+                <div className="flex grow-1 h-18 lg:h-15 m-2">{button}</div>
+                <pre className="flex grow-2 m-2">
+                  <code>{buttonCode}</code>
+                </pre>
+              </div>
+              <hr className="border-slate-700" />
+            </>
+          ))}
           <Button backgroundColor="yellow" borderColor="black">
             I'm a button click on me!
           </Button>

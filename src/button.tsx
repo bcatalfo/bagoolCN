@@ -2,6 +2,7 @@ import "./button.css";
 import cn from "classnames";
 
 export default function Button({
+  onClick,
   backgroundColor,
   backgroundColorOnHover,
   borderColor,
@@ -10,6 +11,7 @@ export default function Button({
   variant = "default",
   children,
 }: {
+  onClick?: () => void;
   backgroundColor: string;
   backgroundColorOnHover?: string;
   borderColor: string;
@@ -47,6 +49,7 @@ export default function Button({
           "--text-color": textColor,
         } as React.CSSProperties
       }
+      onClick={onClick}
     >
       <div
         className={cn(

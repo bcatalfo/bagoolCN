@@ -28,6 +28,8 @@ export default function App() {
                   <span className="text-orange-500">{`borderColor`}</span>
                   <span className="text-red-500">{`=`}</span>
                   <span className="text-green-500">{`"black"`}</span>
+                </div>
+                <div className="flex">
                   <span className="text-blue-500">{`>`}</span>
                 </div>
                 <div className="flex ml-10">

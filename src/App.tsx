@@ -11,12 +11,12 @@ export default function App() {
         <Card>
           <Title> Button </Title>
           <div className="flex flex-col lg:flex-row gap-2 items-center">
-            <div className="flex grow-1 lg:h-1/2">
+            <div className="flex grow-1 lg:h-1/2 m-2">
               <Button backgroundColor="lawngreen" borderColor="black">
                 I'm a button click on me!
               </Button>
             </div>
-            <pre className="flex grow-2">
+            <pre className="flex grow-2 m-2">
               <code>
                 <div className="flex">
                   <span className="text-blue-500">{`<Button `}</span>

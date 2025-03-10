@@ -1,6 +1,7 @@
 import Card from "./card";
 import Button from "./button";
 import Title from "./title";
+import { buttonList } from "./data";
 
 export default function App() {
   return (
@@ -10,71 +11,7 @@ export default function App() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 lg:w-3/4">
         <Card>
           <Title> Button </Title>
-          {[
-            [
-              <Button backgroundColor="lawngreen" borderColor="black">
-                I'm a button click on me!
-              </Button>,
-              <>
-                <div className="flex">
-                  <span className="text-blue-500">{`<Button `}</span>
-                  <span className="text-orange-500">{`backgroundColor`}</span>
-                  <span className="text-red-500">{`=`}</span>
-                  <span className="text-green-500">{`"lawngreen"`}</span>
-                </div>
-                <div className="flex ml-19">
-                  <span className="text-orange-500">{`borderColor`}</span>
-                  <span className="text-red-500">{`=`}</span>
-                  <span className="text-green-500">{`"black"`}</span>
-                </div>
-                <div className="flex">
-                  <span className="text-blue-500">{`>`}</span>
-                </div>
-                <div className="flex ml-10">
-                  <span className="text-slate-800">{`I'm a button click on me!`}</span>
-                </div>
-                <div className="flex">
-                  <span className="text-blue-500">{`</Button>`}</span>
-                </div>
-              </>,
-            ],
-            [
-              <Button
-                backgroundColor="black"
-                borderColor="orange"
-                textColor="white"
-              >
-                I'm a button click on me!
-              </Button>,
-              <>
-                <div className="flex">
-                  <span className="text-blue-500">{`<Button `}</span>
-                  <span className="text-orange-500">{`backgroundColor`}</span>
-                  <span className="text-red-500">{`=`}</span>
-                  <span className="text-green-500">{`"black"`}</span>
-                </div>
-                <div className="flex ml-19">
-                  <span className="text-orange-500">{`borderColor`}</span>
-                  <span className="text-red-500">{`=`}</span>
-                  <span className="text-green-500">{`"orange"`}</span>
-                </div>
-                <div className="flex ml-19">
-                  <span className="text-orange-500">{`textColor`}</span>
-                  <span className="text-red-500">{`=`}</span>
-                  <span className="text-green-500">{`"white"`}</span>
-                </div>
-                <div className="flex">
-                  <span className="text-blue-500">{`>`}</span>
-                </div>
-                <div className="flex ml-10">
-                  <span className="text-slate-800">{`I'm a button click on me!`}</span>
-                </div>
-                <div className="flex">
-                  <span className="text-blue-500">{`</Button>`}</span>
-                </div>
-              </>,
-            ],
-          ].map(([button, buttonCode]) => (
+          {buttonList.map(([button, buttonCode]) => (
             <>
               <div className="flex flex-col lg:flex-row gap-2 items-center">
                 <div className="flex grow-1 h-18 lg:h-15 m-2">{button}</div>

@@ -41,6 +41,7 @@ export default function App() {
               </code>
             </pre>
           </div>
+          <hr className="border-slate-700" />
           <div className="flex flex-col lg:flex-row gap-2 items-center">
             <div className="flex grow-1 h-18 lg:h-15 m-2">
               <Button
@@ -81,9 +82,11 @@ export default function App() {
               </code>
             </pre>
           </div>
+          <hr className="border-slate-700" />
           <Button backgroundColor="yellow" borderColor="black">
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="black"
             borderColor="black"
@@ -92,6 +95,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="white"
             borderColor="black"
@@ -100,6 +104,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="yellow"
             backgroundColorOnHover="lightyellow"
@@ -109,6 +114,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="chartreuse"
             backgroundColorOnHover="aquamarine"
@@ -118,6 +124,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="black"
             backgroundColorOnHover="darkslategrey"
@@ -128,6 +135,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="black"
             borderColor="bisque"
@@ -136,6 +144,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="blue"
             borderColor="oklch(0.637 0.237 25.331)"
@@ -144,6 +153,7 @@ export default function App() {
           >
             I'm a button click on me!
           </Button>
+          <hr className="border-slate-700" />
           <Button
             backgroundColor="orange"
             borderColor="black"

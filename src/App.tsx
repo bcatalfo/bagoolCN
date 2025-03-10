@@ -2,8 +2,10 @@ import Card from "./card";
 import Title from "./title";
 import { buttonList } from "./data";
 import Button from "./button";
+import { useState } from "react";
 
 export default function App() {
+  const [numButtons, setNumButtons] = useState(3);
   return (
     <div className="flex flex-col items-center h-screen">
       <h1 className="text-3xl m-4">Welcome to bagoolCN!</h1>
@@ -11,7 +13,7 @@ export default function App() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 lg:w-3/4">
         <Card>
           <Title> Button </Title>
-          {buttonList.slice(0, 3).map(([button, buttonCode]) => (
+          {buttonList.slice(0, numButtons).map(([button, buttonCode]) => (
             <>
               <div className="flex flex-col lg:flex-row gap-2 items-center">
                 <div className="flex grow-1 h-18 lg:h-15 m-2">{button}</div>
@@ -24,7 +26,11 @@ export default function App() {
           ))}
           <div className="flex justify-center">
             <div className="h-18 lg:h-15 ">
-              <Button backgroundColor="orange" borderColor="black">
+              <Button
+                backgroundColor="orange"
+                borderColor="black"
+                onClick={() => setNumButtons(5)}
+              >
                 Show more
               </Button>
             </div>

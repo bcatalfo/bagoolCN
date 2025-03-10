@@ -87,4 +87,88 @@ export const buttonList: React.ReactNode[][] = [
       </div>
     </>,
   ],
+  [
+    <Button
+      backgroundColor="black"
+      borderColor="black"
+      textColor="white"
+      variant="square"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="white"
+      borderColor="black"
+      textColor="black"
+      variant="square"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="yellow"
+      backgroundColorOnHover="lightyellow"
+      borderColor="black"
+      borderColorOnHover="steelblue"
+      variant="action"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="chartreuse"
+      backgroundColorOnHover="aquamarine"
+      borderColor="black"
+      borderColorOnHover="blueviolet"
+      variant="action"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="black"
+      backgroundColorOnHover="darkslategrey"
+      borderColor="black"
+      borderColorOnHover="dodgerblue"
+      textColor="white"
+      variant="action"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="black"
+      borderColor="bisque"
+      textColor="chartreuse"
+      variant="goober"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="blue"
+      borderColor="oklch(0.637 0.237 25.331)"
+      textColor="white"
+      variant="goober"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
+  [
+    <Button
+      backgroundColor="orange"
+      borderColor="black"
+      textColor="black"
+      variant="goober"
+    >
+      I'm a button click on me!
+    </Button>,
+  ],
 ];

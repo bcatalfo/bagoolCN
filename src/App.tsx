@@ -1,5 +1,4 @@
 import Card from "./card";
-import Button from "./button";
 import Title from "./title";
 import { buttonList } from "./data";
 
@@ -22,81 +21,6 @@ export default function App() {
               <hr className="border-slate-700" />
             </>
           ))}
-          <Button
-            backgroundColor="black"
-            borderColor="black"
-            textColor="white"
-            variant="square"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="white"
-            borderColor="black"
-            textColor="black"
-            variant="square"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="yellow"
-            backgroundColorOnHover="lightyellow"
-            borderColor="black"
-            borderColorOnHover="steelblue"
-            variant="action"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="chartreuse"
-            backgroundColorOnHover="aquamarine"
-            borderColor="black"
-            borderColorOnHover="blueviolet"
-            variant="action"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="black"
-            backgroundColorOnHover="darkslategrey"
-            borderColor="black"
-            borderColorOnHover="dodgerblue"
-            textColor="white"
-            variant="action"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="black"
-            borderColor="bisque"
-            textColor="chartreuse"
-            variant="goober"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="blue"
-            borderColor="oklch(0.637 0.237 25.331)"
-            textColor="white"
-            variant="goober"
-          >
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
-          <Button
-            backgroundColor="orange"
-            borderColor="black"
-            textColor="black"
-            variant="goober"
-          >
-            I'm a button click on me!
-          </Button>
         </Card>
         <Card> Tabs </Card>
         <Card> Hero </Card>

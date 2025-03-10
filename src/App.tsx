@@ -11,7 +11,7 @@ export default function App() {
         <Card>
           <Title> Button </Title>
           <div className="flex flex-col lg:flex-row gap-2 items-center">
-            <div className="flex grow-1 lg:h-1/2 m-2">
+            <div className="flex grow-1 h-18 lg:h-15 m-2">
               <Button backgroundColor="lawngreen" borderColor="black">
                 I'm a button click on me!
               </Button>

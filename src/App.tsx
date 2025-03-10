@@ -1,96 +1,61 @@
 import Card from "./card";
-import Button from "./button";
 import Title from "./title";
+import { buttonList } from "./data";
+import Button from "./button";
+import { useState } from "react";
+import classNames from "classnames";
 
 export default function App() {
+  const [numButtons, setNumButtons] = useState(3);
+  const toggleButtonListSize = () => {
+    if (numButtons == 3) {
+      setNumButtons(buttonList.length);
+    }
+    if (numButtons == buttonList.length) {
+      setNumButtons(3);
+    }
+  };
   return (
     <div className="flex flex-col items-center h-screen">
       <h1 className="text-3xl m-4">Welcome to bagoolCN!</h1>
       <h2 className="text-2xl m-3">Check out our components</h2>
-      <div className="grid gird-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 lg:w-3/4">
         <Card>
           <Title> Button </Title>
-          <Button backgroundColor="lawngreen" borderColor="black">
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="black"
-            borderColor="orange"
-            textColor="white"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button backgroundColor="yellow" borderColor="black">
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="black"
-            borderColor="black"
-            textColor="white"
-            variant="square"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="white"
-            borderColor="black"
-            textColor="black"
-            variant="square"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="yellow"
-            backgroundColorOnHover="lightyellow"
-            borderColor="black"
-            borderColorOnHover="steelblue"
-            variant="action"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="chartreuse"
-            backgroundColorOnHover="aquamarine"
-            borderColor="black"
-            borderColorOnHover="blueviolet"
-            variant="action"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="black"
-            backgroundColorOnHover="darkslategrey"
-            borderColor="black"
-            borderColorOnHover="dodgerblue"
-            textColor="white"
-            variant="action"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="black"
-            borderColor="bisque"
-            textColor="chartreuse"
-            variant="goober"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="blue"
-            borderColor="oklch(0.637 0.237 25.331)"
-            textColor="white"
-            variant="goober"
-          >
-            I'm a button click on me!
-          </Button>
-          <Button
-            backgroundColor="orange"
-            borderColor="black"
-            textColor="black"
-            variant="goober"
-          >
-            I'm a button click on me!
-          </Button>
+          {buttonList
+            .slice(0, numButtons)
+            .map(([button, buttonCode], index) => (
+              <>
+                <div className="flex flex-col lg:flex-row gap-2 items-center">
+                  <div
+                    className={classNames(
+                      "flex grow-1",
+                      { "h-30 lg:h-25": index == 9 },
+                      { "h-20 lg:h-15": index != 9 },
+                      "m-2"
+                    )}
+                  >
+                    {button}
+                  </div>
+                  <pre className="flex grow-2 m-2">
+                    <code>{buttonCode}</code>
+                  </pre>
+                </div>
+                <hr className="border-slate-700" />
+              </>
+            ))}
+          <div className="flex justify-center">
+            <div className="h-18 lg:h-15 ">
+              <Button
+                backgroundColor="orange"
+                borderColor="black"
+                onClick={() => toggleButtonListSize()}
+              >
+                {numButtons == 3 && "Show more"}
+                {numButtons == buttonList.length && "Show less"}
+              </Button>
+            </div>
+          </div>
         </Card>
         <Card> Tabs </Card>
         <Card> Hero </Card>

@@ -2,6 +2,7 @@ import "./button.css";
 import cn from "classnames";
 
 export default function Button({
+  onClick,
   backgroundColor,
   backgroundColorOnHover,
   borderColor,
@@ -10,6 +11,7 @@ export default function Button({
   variant = "default",
   children,
 }: {
+  onClick?: () => void;
   backgroundColor: string;
   backgroundColorOnHover?: string;
   borderColor: string;
@@ -21,7 +23,8 @@ export default function Button({
   return (
     <a
       className={cn(
-        "w-full",
+        "flex",
+        "w-full h-full",
         { "rounded-[16px]": variant == "default" },
         { "rounded-[8px]": variant == "goober" || "action" },
         {
@@ -46,11 +49,12 @@ export default function Button({
           "--text-color": textColor,
         } as React.CSSProperties
       }
+      onClick={onClick}
     >
       <div
         className={cn(
           {
-            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) px-5 py-2 -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
+            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
           {
@@ -58,12 +62,13 @@ export default function Button({
               variant == "action",
           },
           { "border-2 border-solid rounded-md": variant == "square" },
-          "flex items-center gap-4",
+          "flex items-center justify-between gap-4",
           "text-balance",
-          "py-4 px-4",
+          "py-2 px-4",
           "text-(--text-color)",
           "rounded-(--inner-radius)",
-          "bg-(--background-color) hover:bg-(--background-color-on-hover)"
+          "bg-(--background-color) hover:bg-(--background-color-on-hover)",
+          "w-full h-full"
         )}
       >
         {children}

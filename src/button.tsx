@@ -21,6 +21,7 @@ export default function Button({
   return (
     <a
       className={cn(
+        "flex",
         "w-full h-full",
         { "rounded-[16px]": variant == "default" },
         { "rounded-[8px]": variant == "goober" || "action" },

@@ -39,7 +39,8 @@ export default function App() {
                 borderColor="black"
                 onClick={() => toggleButtonListSize()}
               >
-                Show more
+                {numButtons == 3 && "Show more"}
+                {numButtons == buttonList.length && "Show less"}
               </Button>
             </div>
           </div>

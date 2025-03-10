@@ -22,10 +22,6 @@ export default function App() {
               <hr className="border-slate-700" />
             </>
           ))}
-          <Button backgroundColor="yellow" borderColor="black">
-            I'm a button click on me!
-          </Button>
-          <hr className="border-slate-700" />
           <Button
             backgroundColor="black"
             borderColor="black"

@@ -37,7 +37,7 @@ export default function App() {
                   >
                     {button}
                   </div>
-                  <pre className="flex grow-2 m-2">
+                  <pre className="flex grow-2 m-2 text-sm">
                     <code>{buttonCode}</code>
                   </pre>
                 </div>

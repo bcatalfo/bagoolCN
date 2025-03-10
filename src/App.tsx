@@ -30,7 +30,7 @@ export default function App() {
                   <div
                     className={classNames(
                       "flex grow-1",
-                      { "h-30 lg:h-25": index == 9 },
+                      { "h-25 lg:h-20": index == 9 },
                       { "h-20 lg:h-15": index != 9 },
                       "m-2"
                     )}

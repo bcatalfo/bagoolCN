@@ -1,6 +1,7 @@
 import Card from "./card";
 import Title from "./title";
 import { buttonList } from "./data";
+import Button from "./button";
 
 export default function App() {
   return (
@@ -21,6 +22,13 @@ export default function App() {
               <hr className="border-slate-700" />
             </>
           ))}
+          <div className="flex justify-center">
+            <div className="h-18 lg:h-15 ">
+              <Button backgroundColor="orange" borderColor="black">
+                Show more
+              </Button>
+            </div>
+          </div>
         </Card>
         <Card> Tabs </Card>
         <Card> Hero </Card>

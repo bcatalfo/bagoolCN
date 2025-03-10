@@ -60,7 +60,7 @@ export default function Button({
           { "border-2 border-solid rounded-md": variant == "square" },
           "flex items-center justify-between gap-4",
           "text-balance",
-          "py-4 px-4",
+          "py-2 px-2",
           "text-(--text-color)",
           "rounded-(--inner-radius)",
           "bg-(--background-color) hover:bg-(--background-color-on-hover)",

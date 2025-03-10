@@ -10,7 +10,7 @@ export default function App() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 m-3 lg:w-3/4">
         <Card>
           <Title> Button </Title>
-          {buttonList.map(([button, buttonCode]) => (
+          {buttonList.slice(0, 3).map(([button, buttonCode]) => (
             <>
               <div className="flex flex-col lg:flex-row gap-2 items-center">
                 <div className="flex grow-1 h-18 lg:h-15 m-2">{button}</div>

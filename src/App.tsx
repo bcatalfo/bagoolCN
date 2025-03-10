@@ -24,7 +24,7 @@ export default function App() {
           {buttonList.slice(0, numButtons).map(([button, buttonCode]) => (
             <>
               <div className="flex flex-col lg:flex-row gap-2 items-center">
-                <div className="flex grow-1 h-18 lg:h-15 m-2">{button}</div>
+                <div className="flex grow-1 h-30 lg:h-25 m-2">{button}</div>
                 <pre className="flex grow-2 m-2">
                   <code>{buttonCode}</code>
                 </pre>

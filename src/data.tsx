@@ -179,7 +179,7 @@ export const buttonList: React.ReactNode[][] = [
       borderColorOnHover="steelblue"
       variant="action"
     >
-      I'm a button!
+      I'm a button click on me!
     </Button>,
     <>
       <div className="flex">
@@ -188,8 +188,7 @@ export const buttonList: React.ReactNode[][] = [
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"yellow"`}</span>
       </div>
-      <div className="flex">
-        <span className="text-blue-500">{`<Button `}</span>
+      <div className="flex ml-19">
         <span className="text-orange-500">{`backgroundColorOnHover`}</span>
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"lightyellow"`}</span>
@@ -199,8 +198,7 @@ export const buttonList: React.ReactNode[][] = [
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"black"`}</span>
       </div>
-      <div className="flex">
-        <span className="text-blue-500">{`<Button `}</span>
+      <div className="flex ml-19">
         <span className="text-orange-500">{`borderColorOnHover`}</span>
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"steelblue"`}</span>
@@ -214,7 +212,7 @@ export const buttonList: React.ReactNode[][] = [
         <span className="text-blue-500">{`>`}</span>
       </div>
       <div className="flex ml-10">
-        <span className="text-slate-800">{`I'm a button!`}</span>
+        <span className="text-slate-800">{`I'm a button click on me!`}</span>
       </div>
       <div className="flex">
         <span className="text-blue-500">{`</Button>`}</span>
@@ -229,7 +227,7 @@ export const buttonList: React.ReactNode[][] = [
       borderColorOnHover="blueviolet"
       variant="action"
     >
-      I'm a button!
+      I'm a button click on me!
     </Button>,
     <>
       <div className="flex">
@@ -238,8 +236,7 @@ export const buttonList: React.ReactNode[][] = [
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"chartreuse"`}</span>
       </div>
-      <div className="flex">
-        <span className="text-blue-500">{`<Button `}</span>
+      <div className="flex ml-19">
         <span className="text-orange-500">{`backgroundColorOnHover`}</span>
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"aquamarine"`}</span>
@@ -249,8 +246,7 @@ export const buttonList: React.ReactNode[][] = [
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"black"`}</span>
       </div>
-      <div className="flex">
-        <span className="text-blue-500">{`<Button `}</span>
+      <div className="flex ml-19">
         <span className="text-orange-500">{`borderColorOnHover`}</span>
         <span className="text-red-500">{`=`}</span>
         <span className="text-green-500">{`"blueviolet"`}</span>
@@ -264,7 +260,7 @@ export const buttonList: React.ReactNode[][] = [
         <span className="text-blue-500">{`>`}</span>
       </div>
       <div className="flex ml-10">
-        <span className="text-slate-800">{`I'm a button!`}</span>
+        <span className="text-slate-800">{`I'm a button click on me!`}</span>
       </div>
       <div className="flex">
         <span className="text-blue-500">{`</Button>`}</span>

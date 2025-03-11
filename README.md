@@ -10,6 +10,7 @@ Component library built with React and TailwindCSS.
 - - Change how the deployment works
 - - Replace the a tag in Button with a NextJS Link component
 - Button
+- - Fix action button bug on mobile safari
 - - add button builder online tool
 - - - needs to be on a new page
 - - - - do i need next for routing?

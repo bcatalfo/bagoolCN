@@ -70,6 +70,7 @@ export default function Button({
           "bg-(--background-color) hover:bg-(--background-color-on-hover)",
           "w-full h-full"
         )}
+        tabIndex={0}
       >
         {children}
         <svg

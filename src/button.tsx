@@ -54,11 +54,11 @@ export default function Button({
       <div
         className={cn(
           {
-            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) -translate-y-1 hover:-translate-y-1.5 focus-within:-translate-y-0.5 active:-translate-y-0.5 mx-[-1.5px]":
+            "rounded-[8px] text-[15px] font-bold border-2 border-(--border-color) -translate-y-1 hover:-translate-y-1.5 active:-translate-y-0.5 mx-[-1.5px]":
               variant == "goober",
           },
           {
-            "rounded-lg z-1 focus-within:translate-y-[4px] active:translate-y-[4px] focus-within:translate-x-[3px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) focus:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
+            "rounded-lg z-1 active:translate-y-[4px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
               variant == "action",
           },
           { "border-2 border-solid rounded-md": variant == "square" },

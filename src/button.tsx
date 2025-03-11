@@ -68,6 +68,7 @@ export default function Button({
           "text-(--text-color)",
           "rounded-(--inner-radius)",
           "bg-(--background-color) hover:bg-(--background-color-on-hover)",
+          "select-none",
           "z-1",
           "w-full h-full"
         )}

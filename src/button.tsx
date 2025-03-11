@@ -58,7 +58,7 @@ export default function Button({
               variant == "goober",
           },
           {
-            "rounded-lg z-1 active:translate-y-[4px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
+            "rounded-lg translate-0 active:translate-y-[4px] active:translate-x-[3px] border-2 border-solid border-(--border-color) hover:border-(--border-color-on-hover) active:border-(--border-color-on-hover)":
               variant == "action",
           },
           { "border-2 border-solid rounded-md": variant == "square" },
@@ -68,9 +68,9 @@ export default function Button({
           "text-(--text-color)",
           "rounded-(--inner-radius)",
           "bg-(--background-color) hover:bg-(--background-color-on-hover)",
+          "z-1",
           "w-full h-full"
         )}
-        tabIndex={0}
       >
         {children}
         <svg
